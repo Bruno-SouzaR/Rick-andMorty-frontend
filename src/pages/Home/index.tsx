@@ -89,7 +89,7 @@ export const Home: React.FC = () => {
       {error && <ErrorMessage>{error}</ErrorMessage>}
       {isLoading && (
               <LoadingImage>
-                <img src="../../src/assets/Loading.png" alt="Loading" />
+                <img src="assets/Loading.png" alt="Loading" />
                 <p>Loading...</p>
               </LoadingImage>
             )}
@@ -112,7 +112,7 @@ export const Home: React.FC = () => {
       )}
       {isLoadingCharacter ? (
         <LoadingImage>
-          <img src="../../src/assets/Loading.png" alt="Loading" />
+          <img src="/assets/Loading.png" alt="Loading" />
           <p>Loading character details...</p>
         </LoadingImage>
       ) : (
