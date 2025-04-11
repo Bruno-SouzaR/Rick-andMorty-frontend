@@ -1,4 +1,4 @@
-const API_BASE_URL = 'http://localhost:5000';
+const { VITE_API_BASE_URL } = import.meta.env;
 
 async function request(url: string, { method = 'GET', data, queryParams, ...options }: RequestInit & { data?: any; queryParams?: string; } = {}){
   const headers = {
@@ -16,7 +16,7 @@ async function request(url: string, { method = 'GET', data, queryParams, ...opti
     config.body = JSON.stringify(data);
   }
 
-  const fullUrl = queryParams ? `${API_BASE_URL}${url}?${queryParams}` : `${API_BASE_URL}${url}`;
+  const fullUrl = queryParams ? `${VITE_API_BASE_URL}${url}?${queryParams}` : `${VITE_API_BASE_URL}${url}`;
 
   const response = await fetch(fullUrl, config);
 
