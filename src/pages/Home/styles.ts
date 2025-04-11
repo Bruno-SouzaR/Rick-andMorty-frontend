@@ -6,7 +6,7 @@ export const StyledHome = styled.div`
   align-items: center;
   width: 100%;
   min-height: 100vh;
-  background-image: url('../../src/assets/Background.png');
+  background-image: url('/assets/Background.png');
   background-size: cover;
   background-position: center;
   background-attachment: fixed;

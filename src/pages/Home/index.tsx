@@ -72,7 +72,7 @@ export const Home: React.FC = () => {
     <div>
       <StyledHome>
 
-      <img src="../../src/assets/Logo.png" alt="Rick and Morty" 
+      <img src="/assets/Logo.png" alt="Rick and Morty" 
         onClick={() => window.location.href ='/'}
       />
 
