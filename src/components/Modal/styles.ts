@@ -398,7 +398,7 @@ export const CharacterImg = styled.img`
   @media (max-width: 480px) {
    height: 40vh;
    width: 100%;
-   object-fit: none;
+   object-fit: fill;
    margin-top: 3.5rem;
    border-radius: 1rem;
  }
