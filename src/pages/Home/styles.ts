@@ -17,8 +17,8 @@ export const StyledHome = styled.div`
     width: 40rem;
     cursor: pointer;
 
-    @media (max-width: 480px){
-      width: 30rem;
+    @media (max-width: 768px){
+      width: 38rem;
       cursor: pointer;
     }
   }

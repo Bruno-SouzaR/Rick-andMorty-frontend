@@ -22,8 +22,12 @@ export const ModalContent = styled.div`
 
   @media (max-width: 768px) {
     flex-direction: column;
-    width: 40rem;
+    width: 38rem;
     height: auto;
+  }
+
+  @media (max-width: 480px) {
+    height: 85vh;
   }
 `;
 
@@ -53,7 +57,17 @@ export const CloseButton = styled.button`
     border-width: 0.1rem;
     z-index: 100;
   }
-`
+
+  @media (max-width: 480px) {
+    top: 0.5rem;
+    left: 0.5rem;
+    color: #000000;
+    font-size: 1.2rem;
+    border: 0.2rem solid black;
+    padding: 0.3rem 0.5rem;
+    border-width: 0.1rem;
+  }
+`;
 
 export const LeftPanel = styled.div`
   flex: 0 0 35%;
@@ -76,7 +90,6 @@ export const LeftPanel = styled.div`
   @media (max-width: 768px) {
     width: 100%;
     height: auto;
-    margin-top: 0;
     
     &::before {
       backdrop-filter: none;
@@ -113,11 +126,11 @@ export const CharacterImg = styled.img`
     width: auto;
     object-fit: cover;
     margin-top: 5rem;
-    border-radius: 0;
+    border-radius: 1rem;
   }
 
   @media (max-width: 480px) {
-    height: 30%;
+    height: auto;
     object-fit: fill;
     border-radius: 1rem;
   }
